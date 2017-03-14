@@ -1,0 +1,38 @@
+Last login: Mon Apr 25 16:11:52 on ttys001
+ivybridge:~ georgehito$ ssh george@flume.cs.dartmouth.edu
+george@flume.cs.dartmouth.edu's password: 
+Last login: Mon Apr 25 19:35:54 2016 from 10.31.203.94
+
+[flume:~] 101) cd cs50
+
+[flume:cs50] 102) ls
+labs  projects
+
+[flume:cs50] 103) cd labs
+
+[flume:labs] 104) cd lab3
+
+[flume:lab3] 105) ls
+bag  counters  hashtable  list
+
+[flume:lab3] 106) cd bag
+
+[flume:bag] 107) make
+gcc -Wall -pedantic -std=c11 -ggdb   -c -o bagtest.o bagtest.c
+gcc -Wall -pedantic -std=c11 -ggdb   -c -o bag.o bag.c
+gcc -Wall -pedantic -std=c11 -ggdb bagtest.o bag.o  -o bagtest
+
+[flume:bag] 108) ./bagtest
+(nil)
+at george.j.hito.18@dartmouth.edu
+contact me for more information
+extra insertion
+how many cs profs want to try out the htc vive?
+my name is george and i like coding
+69
+hello
+(nil)
+(nil)
+(nil)
+
+[flume:bag] 109) 

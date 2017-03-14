@@ -1,0 +1,28 @@
+Last login: Mon Apr 25 20:51:46 on ttys000
+ivybridge:~ georgehito$ ssh george@flume.cs.dartmouth.edu
+george@flume.cs.dartmouth.edu's password: 
+Last login: Mon Apr 25 20:51:52 2016 from 10.31.203.94
+
+[flume:~] 101) cd cs50/labs/lab3/hashtable
+
+[flume:hashtable] 102) ls
+hashtable.c      hashtabletest.dSYM  list.c    README.txt
+hashtable.h      jhash.c             list.h    testing-hashtable.txt
+hashtabletest.c  jhash.h             Makefile
+
+[flume:hashtable] 103) make
+gcc -Wall -pedantic -std=c11 -ggdb   -c -o hashtabletest.o hashtabletest.c
+gcc -Wall -pedantic -std=c11 -ggdb   -c -o hashtable.o hashtable.c
+gcc -Wall -pedantic -std=c11 -ggdb hashtabletest.o hashtable.o list.c jhash.c  -o hashtabletest
+
+[flume:hashtable] 104) ./hashtabletest
+Inserting george: 1
+Inserting carrie: 1
+Inserting george: 0
+Inserting carrie: 0
+Getting data from george: hello
+Getting data from carrie: <3<3<3
+
+[flume:hashtable] 105) logout
+Connection to flume.cs.dartmouth.edu closed.
+ivybridge:~ georgehito$ 
